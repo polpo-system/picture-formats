@@ -13,7 +13,7 @@ portia package, and `Pictures.Open` finds it through the PictureConverters secti
                                        grey, plain and run length encoded
     pcx           PCX (bit)            PCX up to 256 colours
     ico           ICO (bit)            Windows icons (even sizes)
-    iff           IFF (bit)            Amiga IFF ILBM
+    iff           IFF (bit)            Amiga IFF ILBM with a palette (up to 8 planes)
     xpm           XPM (colormodels)    X pixmaps
     bit           BIT                  bit operations on CHAR, INTEGER, LONGINT
     colormodels   ColorModels          RGB, HSV and CMY conversions
@@ -37,7 +37,7 @@ to the nearest ones (JPEG dithers).
 GIF, BMP, ICO, IFF and ColorModels are unchanged. PPM and XBM are not here: they need
 Documents and Display3 of the Gadgets system.
 
-`test/`: a sample of each format (except IFF) and `PictTest.Open file width height`, the
+`test/`: a sample of each format (sample.iff from netpbm: pnmquant 64 | ppmtoilbm -maxplanes 8) and `PictTest.Open file width height`, the
 test of the packages (needs the desktop).
 
 The license is the one of ETH Oberon: see `LICENSE`.
