@@ -40,4 +40,5 @@ Documents and Display3 of the Gadgets system.
 `test/`: a sample of each format (sample.iff from netpbm: pnmquant 64 | ppmtoilbm -maxplanes 8) and `PictTest.Open file width height`, the
 test of the packages (needs the desktop).
 
-The license is the one of ETH Oberon: see `LICENSE`.
+The license is GPL-3 (`LICENSE`); the code comes from ETH Oberon, whose license (`LICENSE.ETH`)
+asks to keep its copyright notice and conditions, which `LICENSE.ETH` does.
